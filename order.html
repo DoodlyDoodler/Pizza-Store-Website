@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Order</title>
+<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body id="page2">
+		<header>
+			<h1><span class="logo">SHOW YOUR CREATIVE SIDE AND MAKE AN AWESOME PIZZA</span></h1>
+		</header>
+		<!--helps in navigation of different pages-->
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Go to the Homepage">Home</a></li>
+				<li><a href="order.html" title="Go to the Order page">Order</a></li>
+				<li><a href="PersonalDetails.html" title="Go to the Personal details page">Personal Details</a></li>
+			</ul>
+		</nav>
+		<main id="content">
+			<h2>CHOOSE Y'ALL !!!</h2>
+			<p><a title="HAPPY CUSTOMERS"><img width="325" alt="pizzagirl" src="img/pizzagirl.jpg"></a></p>
+			<form id="edit_payment_info" method="get" action="PersonalDetails.html">
+				<input type="hidden" name="form_sent" value="1" />
+
+				<!-- journey of making small buttons start here -->
+			<fieldset> <!-- size of pizza-->
+				<legend><h5>SIZE</h5></legend>
+        <input type="radio" name="size" id="small" value="small" />
+        <label for="small">SMALL</label>
+        <input type="radio" name="size" id="medium" value="medium" />
+        <label for="medium">MEDIUM</label>
+          <input type="radio" name="size" id="large" value="large" />
+          <label for="large">LARGE</label>
+          <input type="radio" name="size" id="ExtraLarge" value="extra large" />
+          <label for="ExtraLarge">EXTRA LARGE</label>
+        </fieldset>
+
+				<fieldset><!-- shape of pizza-->
+          <legend><h5>SHAPE</h5></legend>
+          <input type="radio" name="SHAPE" id="square" value="square" />
+          <label for="square">SQUARE</label>
+          <input type="radio" name="SHAPE" id="circle" value="circle" />
+          <label for="circle">CIRCLE</label>
+      </fieldset>
+
+				<fieldset><!-- toppings of pizza-->
+					<legend><h5>TOPPINGS</h5></legend>
+          <input type="checkbox" name="toppings" id="Onion&Capsicum" value="ONION & CAPSICUM" />
+          <label for="Onion&Capsicum">ONION & CAPSICUM</label>
+          <input type="checkbox" name="toppings" id="Corn&Tomato" value="CORN AND TOMATO" />
+          <label for="Corn&Tomato">CORN AND TOMATO</label>
+          <input type="checkbox" name="toppings" id="Peparonni" value="PEPARONNI" />
+          <label for="Peparonni">PEPARONNI</label>
+          <input type="checkbox" name="toppings" id="TurkeyChicken" value="TURKEY CHICKEN" />
+          <label for="TurkeyChicken">TURKEY CHICKEN</label>
+          <input type="checkbox" name="toppings" id="Olives&Avocado" value="OLIVES AND AVOCADO" />
+          <label for="Olives&Avocado">OLIVES AND AVOCADO</label>
+          <input type="checkbox" name="toppings" id="India'sSecret" value="INDIA'S SECRET" />
+          <label for="India'sSecret">INDIA'S SECRET</label>
+          <input type="checkbox" name="toppings" id="JustCheese" value="JUST CHEESE" />
+          <label for="JustCheese">JUST CHEESE</label>
+				</fieldset>
+
+        <fieldset><!-- crusts of pizza-->
+        <legend><h5>CRUST</h5></legend>
+        <input type="radio" name="crust" id="DeepDish" value="DEEP DISH" />
+        <label for="DeepDish">DEEP DISH</label>
+        <input type="radio" name="crust" id="ThinCrust" value="THIN CRUST" />
+        <label for="ThinCrust">THIN CRUST</label>
+        <input type="radio" name="crust" id="India's_Special_Naan_Crust" value="INDIA'S SPECIAL NAAN CRUST" />
+        <label for="India's_Special_Naan_Crust">INDIA'S SPECIAL NAAN CRUST</label>
+      </fieldset>
+
+				<fieldset><!-- method to buy pizza-->
+					<legend><h5>METHOD</h5></legend>
+            <input type="radio" name="method" id="TakeOut" value="TAKE OUT" />
+            <label for="TakeOut">TAKE OUT</label>
+            <input type="radio" name="method" id="Delivery" value="DELIVERY" />
+            <label for="Delivery">DELIVERY</label>
+				</fieldset>
+
+				<button type="submit">Continue</button> <!-- button to take me to personal information page for the making the order to end -->
+			</form>
+		</main>
+		<footer>
+		<p><small>©COMP1002 Payment Form. All rights reserved | DOODIE'S PIZZA</small></p>
+		</footer>
+	</body>
+</html>

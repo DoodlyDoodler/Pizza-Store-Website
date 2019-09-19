@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Personal Details</title>
+<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body id="page3">
+		<header>
+			<h1><span class="logo">PERSONAL DETAILS</span></h1>
+		</header>
+		<nav> <!-- helps in navigation between pages -->
+			<ul>
+				<li><a href="index.html" title="Go to the Homepage">Home</a></li>
+				<li><a href="order.html" title="Go to the Order page">Order</a></li>
+				<li><a href="PersonalDetails.html" title="Go to the Personal details page">Personal Details</a></li>
+			</ul>
+		</nav>
+		<main id="content">
+			<!-- helps to make the submit button work -->
+			<form id="edit_payment_info" method="get" action="process-form.php">
+				<input type="hidden" name="form_sent" value="1" />
+
+			<fieldset>
+				<legend>Personal Information</legend>
+					<div>
+						<label for="fname">Last Name</label>
+						<input id="fname" type="text" name="fname" size="60" maxlength="20" placeholder="First Name" required="required"/> <!-- input is an empty element so it does not need to be closed-->
+					</div>
+					<div>
+						<label for="lname">First Name</label>
+						<input id="lname" type="text" name="lname"/>
+					</div>
+					<div>
+						<label for="address">Address Line 1</label>
+						<input id="address" type="text" name="address" required />
+					</div>
+					<div>
+						<label for="address2">Address Line 2</label>
+						<input id="address2" type="text" name="address2" />
+					</div>
+					<div>
+						<label for="province">Province</label>
+						<select id="province" name="province">
+							<option value="choose">choose…</option>
+							<option value="AB">Alberta</option>
+							<option value="BC">British Colombia</option>
+							<option value="ON">Ontario</option>
+							<option value="MB">Manitoba</option>
+							<option value="NB">New Brunswick</option>
+							<option value="NL">Newfoundland</option>
+							<option value="NT">Northwest Territories</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="NV">Nunavut</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="PQ">Québec</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="YK">Yukon Territory</option>
+						</select>
+					</div>
+					<div>
+						<label for="phone">Phone</label>
+						<input id="phone" type="tel" name="phone" />
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input id="email" type="email" name="email" />
+					</div>
+			</fieldset>
+				<fieldset><!-- credit card detais-->
+					<legend>Credit Card Details</legend>
+					<input type="radio" name="cctype" id="amex" value="amex" />
+					<label for="amex"><img src="img/amex_logo.gif" alt="American Express" /></label>
+
+					<input type="radio" name="cctype" id="mc" value="mc" />
+					<label for="mc"><img src="img/mc_logo.gif" alt="MasterCard" /></label>
+
+						<input type="radio" name="cctype" id="visa" value="visa" />
+						<label for="visa"><img src="img/visa_logo.gif" alt="VISA" /></label>
+					<div>
+						<label for="ccnumber">Credit Card Number</label>
+						<input id="ccnumber" type="text" name="ccnumber" value="" />
+					</div>
+					<div>
+						<label for="ccexpireyear">Expiration Year</label>
+						<select id="ccexpireyear" name="ccexpireyear">
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+						</select>
+					</div>
+					<div>
+						<label for="ccexpiremonth">Expiration Month</label>
+						<select name="ccexpiremonth" id="ccexpiremonth">
+							<option value="choose">choose…</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</div>
+				</fieldset>
+<button type="submit">Submit</button> <!-- finally the end of making order and hence my delivery is on way-->
+			</form>
+		</main>
+		<footer>
+		<p><small>©COMP1002 Payment Form. All rights reserved | DOODIE'S PIZZA</small></p>
+		</footer>
+	</body>
+</html>
